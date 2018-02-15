@@ -1,0 +1,99 @@
+body {
+font-family: "Helvetica";
+background: #333333 ;
+color: white;
+text-align: center;
+}
+
+
+
+#whoPlaysMessage {
+	font-size: x-large; 
+	font-weight:bold;
+}
+
+#winner	 {
+	font-size: x-large; 
+	font-weight:bold;
+}
+
+#attesa {
+	padding: 10px;
+	font-size: small;
+}
+
+
+/*pallini bianchi*/
+#container > div > div {
+	float: left;
+
+	border-width: 5px;  
+    border-style: solid;
+    border-color: #000040;
+
+	width: 65px;
+	height: 65px;
+	margin: 10px;
+	background-color: #333333 ;
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+}
+
+
+
+/*freccia superiore*/
+#arrows > span {
+	visibility: hidden;
+	float: left;
+	width: 65px;
+	height: 65px;
+
+	border-width: 5px;  
+    border-style: solid;
+    border-color: rgba(0,0,0, 0.20);
+
+	margin: 10px;
+	
+	-moz-border-radius: 65px;
+	border-radius: 65px;
+	font-size:large;
+
+	-webkit-animation-name: inserire;
+	animation-duration: 0.75s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+}
+
+
+/*insieme delle frecce*/
+#arrows{
+
+	margin: auto;
+	height: 90px; 
+	width: 670px; 
+	padding-bottom: 0;
+
+
+	font-size: xx-large; 
+	font-weight:bold;
+	line-height: 90px;
+
+}
+
+/*struttura blu*/
+#container  {
+
+	margin: auto;
+	
+	width: 670px;
+	height: 580px;
+	padding: 10px;	
+	background-color: #000066;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+@-webkit-keyframes inserire {
+    0%   {transform:translate(0px,3px);}
+    50% {transform:translate(0px,-1px);}
+    100% {transform:translate(0px,1px);}
